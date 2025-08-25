@@ -9,14 +9,22 @@ abstract class AppTheme {
       scaffoldBackgroundColor: AppColors.backgroundColor,
       primaryColor: AppColors.primaryColor,
 
-      textTheme: TextTheme(labelMedium: AppStyles.logoAppStyle),
+      textTheme: TextTheme(
+        labelMedium: AppStyles.logoAppStyle,
+        headlineMedium: AppStyles.lableStyle,
+        bodyMedium: AppStyles.descriptionStyle,
+      ),
     );
   }
 
   static ThemeData get darkTheme {
     return ThemeData(
       brightness: Brightness.dark,
-      textTheme: TextTheme(labelMedium: AppStyles.logoAppStyle),
+      textTheme: TextTheme(
+        labelMedium: AppStyles.logoAppStyle,
+        headlineMedium: AppStyles.lableStyle,
+        bodyMedium: AppStyles.descriptionStyle,
+      ),
     );
   }
 }

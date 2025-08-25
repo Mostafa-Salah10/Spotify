@@ -21,7 +21,7 @@ class _SpalshViewState extends State<SpalshView> {
   Future<void> _handleWaitingScreen() {
     return Future.delayed(const Duration(seconds: 3), () {
       // ignore: use_build_context_synchronously
-      context.pushReplacementScreen(AppRoutes.onboarding);
+      context.pushReplacementScreen(AppRoutes.onboardingOne);
     });
   }
 

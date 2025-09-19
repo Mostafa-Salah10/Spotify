@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_clone/core/utils/app_colors.dart';
+import 'package:spotify_clone/core/utils/app_spaces.dart';
+import 'package:spotify_clone/core/utils/size_config.dart';
+import 'package:spotify_clone/core/widgets/custom_back_button.dart';
+import 'package:spotify_clone/core/widgets/custom_lable_text.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -6,8 +11,23 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Login')),
-      body: const Center(child: Text('Login View')),
+      body: Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: SizeConfig.blockWidth * 6,
+          vertical: SizeConfig.blockHeight * 7,
+        ),
+        child: Column(
+          children: [
+            CustomBackButton(),
+            VerticalSpace(height: 11),
+            CustomLableText(
+              text: "Sign In",
+              color: AppColors.darkbackgroundColor,
+              fontSize: SizeConfig.textSize * 4,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

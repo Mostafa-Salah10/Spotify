@@ -11,9 +11,7 @@ import 'package:spotify_clone/core/widgets/custom_general_button.dart';
 import 'package:spotify_clone/core/widgets/custom_lable_text.dart';
 
 class CustomChooseAuthContent extends StatelessWidget {
-  const CustomChooseAuthContent({
-    super.key,
-  });
+  const CustomChooseAuthContent({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +29,7 @@ class CustomChooseAuthContent extends StatelessWidget {
           CustomLableText(
             text: "Enjoy Listening To Music",
             color: AppColors.darkbackgroundColor,
+            fontSize: SizeConfig.textSize * 3,
           ),
           const SizedBox(height: 20),
           CustomDescriptionText(

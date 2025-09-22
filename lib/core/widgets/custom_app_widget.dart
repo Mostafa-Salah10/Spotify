@@ -4,9 +4,10 @@ import 'package:spotify_clone/core/utils/assets.dart';
 import 'package:spotify_clone/core/utils/size_config.dart';
 
 class CustomAppWidget extends StatelessWidget {
-  const CustomAppWidget({super.key, this.width, this.height});
+  const CustomAppWidget({super.key, this.width, this.height, this.fontSize});
   final double? width;
   final double? height;
+  final double? fontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class CustomAppWidget extends StatelessWidget {
           style: width == null
               ? Theme.of(context).textTheme.labelMedium
               : Theme.of(context).textTheme.labelMedium!.copyWith(
-                  fontSize: SizeConfig.textSize * 5,
+                  fontSize: SizeConfig.textSize * fontSize!,
                 ),
         ),
       ],

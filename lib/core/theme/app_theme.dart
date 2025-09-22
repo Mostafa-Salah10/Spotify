@@ -14,6 +14,8 @@ abstract class AppTheme {
         labelMedium: AppStyles.logoAppStyle,
         headlineMedium: AppStyles.lableStyle,
         bodyMedium: AppStyles.descriptionStyle,
+        bodySmall: AppStyles.smallText,
+        titleMedium: AppStyles.mediumText,
       ),
     );
   }
@@ -27,6 +29,8 @@ abstract class AppTheme {
         labelMedium: AppStyles.logoAppStyle,
         headlineMedium: AppStyles.lableStyle,
         bodyMedium: AppStyles.descriptionStyle,
+        bodySmall: AppStyles.smallText,
+        titleMedium: AppStyles.mediumText,
       ),
     );
   }

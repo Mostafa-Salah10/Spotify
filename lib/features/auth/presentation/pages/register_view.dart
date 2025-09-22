@@ -25,6 +25,7 @@ class RegisterView extends StatelessWidget {
               color: AppColors.darkbackgroundColor,
               fontSize: SizeConfig.textSize * 4,
             ),
+            
           ],
         ),
       ),

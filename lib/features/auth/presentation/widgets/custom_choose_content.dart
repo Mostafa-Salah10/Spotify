@@ -24,7 +24,7 @@ class CustomChooseAuthContent extends StatelessWidget {
         children: [
           CustomBackButton(),
           VerticalSpace(height: 11),
-          CustomAppWidget(width: 80, height: 80),
+          CustomAppWidget(width: 80, height: 80,fontSize: 5,),
           VerticalSpace(height: 7),
           CustomLableText(
             text: "Enjoy Listening To Music",

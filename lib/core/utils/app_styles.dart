@@ -18,4 +18,12 @@ abstract class AppStyles {
     fontWeight: FontWeight.normal,
     color: AppColors.gray,
   );
+  static TextStyle smallText = TextStyle(
+    color: AppColors.blackTextColor,
+    fontSize: SizeConfig.textSize * 2,
+  );
+  static TextStyle mediumText = TextStyle(
+    color: AppColors.blackColor,
+    fontSize: SizeConfig.textSize * 2.2,
+  );
 }

@@ -26,4 +26,9 @@ abstract class AppStyles {
     color: AppColors.blackColor,
     fontSize: SizeConfig.textSize * 2.2,
   );
+  static TextStyle fieldStyle = TextStyle(
+    color: AppColors.gray,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/core/utils/app_colors.dart';
+import 'package:spotify_clone/core/utils/app_styles.dart';
 import 'package:spotify_clone/core/utils/size_config.dart';
 
 class CustomTextFormField extends StatelessWidget {
@@ -21,6 +22,8 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      cursorColor: AppColors.primaryColor,
+
       onChanged: onChanged,
       validator: validator,
       obscureText: isSecure ?? false,
@@ -32,7 +35,7 @@ class CustomTextFormField extends StatelessWidget {
         focusedBorder: _customBorder(color: AppColors.primaryColor),
         enabledBorder: _customBorder(color: AppColors.gray),
         hintText: hint,
-        hintStyle: TextStyle(color: AppColors.gray, fontSize: 14),
+        hintStyle: AppStyles.fieldStyle,
       ),
     );
   }

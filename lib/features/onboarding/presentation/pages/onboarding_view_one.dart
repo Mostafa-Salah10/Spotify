@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/core/extensions/custom_navigator_extension.dart';
-import 'package:spotify_clone/core/routes/app_routes.dart';
+import 'package:spotify_clone/core/config/routes/app_routes.dart';
 import 'package:spotify_clone/core/utils/assets.dart';
 import 'package:spotify_clone/core/utils/size_config.dart';
 import 'package:spotify_clone/core/widgets/custom_app_widget.dart';

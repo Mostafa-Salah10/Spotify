@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:spotify_clone/core/functions/inialize_app_config.dart';
-import 'package:spotify_clone/core/routes/app_router.dart';
-import 'package:spotify_clone/core/routes/app_routes.dart';
-import 'package:spotify_clone/core/theme/app_theme.dart';
+import 'package:spotify_clone/core/config/routes/app_router.dart';
+import 'package:spotify_clone/core/config/routes/app_routes.dart';
+import 'package:spotify_clone/core/config/theme/app_theme.dart';
 import 'package:spotify_clone/features/onboarding/presentation/manager/theme_manager.dart';
 
 class SpotifyApp extends StatelessWidget {

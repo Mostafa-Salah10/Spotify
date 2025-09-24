@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_clone/core/routes/app_routes.dart';
+import 'package:spotify_clone/core/config/routes/app_routes.dart';
 import 'package:spotify_clone/features/auth/presentation/pages/choose_auth_veiw.dart';
 import 'package:spotify_clone/features/auth/presentation/pages/login_view.dart';
 import 'package:spotify_clone/features/auth/presentation/pages/register_view.dart';

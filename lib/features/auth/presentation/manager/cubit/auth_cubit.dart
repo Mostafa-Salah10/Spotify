@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:spotify_clone/core/params/params.dart';
 import 'package:spotify_clone/core/service/service_locator.dart';
@@ -9,6 +10,8 @@ part 'auth_state.dart';
 
 class AuthCubit extends Cubit<AuthState> {
   AuthCubit() : super(AuthInitial());
+  final signInKey = GlobalKey<FormState>();
+  final signUpKey = GlobalKey<FormState>();
   //this cubit trigger the use cases
 
   ///sign up user with email and password

@@ -4,6 +4,7 @@ import 'package:spotify_clone/core/functions/inialize_app_config.dart';
 import 'package:spotify_clone/core/config/routes/app_router.dart';
 import 'package:spotify_clone/core/config/routes/app_routes.dart';
 import 'package:spotify_clone/core/config/theme/app_theme.dart';
+import 'package:spotify_clone/features/auth/presentation/manager/cubit/auth_cubit.dart';
 import 'package:spotify_clone/features/onboarding/presentation/manager/theme_manager.dart';
 
 class SpotifyApp extends StatelessWidget {
@@ -14,7 +15,10 @@ class SpotifyApp extends StatelessWidget {
     //inialize my config of app
     initializeAppConfig(context);
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (_) => ThemeManager())],
+      providers: [
+        BlocProvider(create: (_) => ThemeManager()),
+        BlocProvider(create: (_) => AuthCubit()),
+      ],
       child: BlocBuilder<ThemeManager, ThemeMode>(
         builder: (context, theme) {
           return MaterialApp(

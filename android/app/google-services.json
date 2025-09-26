@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:438293655889:android:fde71753713847a1c92370",
+        "mobilesdk_app_id": "1:438293655889:android:4cc6caf6c76dffe4c92370",
         "android_client_info": {
           "package_name": "com.example.spotify_clone"
         }

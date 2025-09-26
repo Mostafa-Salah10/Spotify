@@ -5,7 +5,10 @@ import 'package:spotify_clone/core/params/params.dart';
 
 class AuthRemoteDataSource {
   // Implementation of remote data source methods for authentication
-  final FirebaseAuth auth = FirebaseAuth.instance;
+  late final FirebaseAuth auth;
+  AuthRemoteDataSource() {
+    auth = FirebaseAuth.instance;
+  }
   Future<void> signIn(UserSignInParams userSignInParams) async {
     try {
       await auth.signInWithEmailAndPassword(
